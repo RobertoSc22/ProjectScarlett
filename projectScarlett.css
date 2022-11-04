@@ -1,0 +1,90 @@
+body {background-color: #fbfbfd; font-family: arial;}
+
+/*menu*/
+*{padding: 0; margin: 0; text-decoration: none; list-style: none;
+box-sizing: border-box;
+}
+nav{
+	background: #0082e6; height: 80px; width: 100%; position: fixed;
+}
+label.logo{
+	color: white; font-size: 35px; line-height: 80px;
+	padding: 0 100px; font-weight: bold;
+}
+nav ul{ float: right; margin-right: 20px;	
+}
+nav ul li{display: inline-block; line-height: 80px; margin: 0 5px;
+}
+nav ul li a{ color: white; font-size: 17px; text-transform: uppercase;
+padding: 7px 13px; border-radius: 3px;
+}
+a.active,a:hover{ background: #1b9bff; transition: .5s;
+}
+.checkbtn{font-size: 30px; color: white; float: right;
+	line-height: 80px; margin-right: 40px; cursor: pointer;
+	display: none;
+}
+#check{display: none;}
+/*---------------------------------------------------------------------*/
+
+#title{padding-top: 120px; font-size: 50px; font-weight: bold; text-align: center; padding-bottom: 20px;}
+.content{text-align: center; margin-top: 2px;}
+.display{width: 21%; padding: 10px; margin-bottom: 2px; border-radius: 25px; border: solid; border-color: black;}
+.button{height: 10%; width: 5%; border-radius: 25px; transition: .3s; cursor: pointer;}
+.button:hover{background-color: #A5A5A5; transition: .3s;}
+#uguale{width: 21%; background-color: #FFC03F; transition: .3s;}
+#uguale:hover{background-color: #FF5703; transition: .3s; cursor: pointer;}
+#footer{background-color: #0082e6; padding: 50px; color: white; font-weight: bolder; text-align: right; margin-top: 50%;}
+
+
+
+@media (max-width: 952px){
+	/*------------------------------*/
+	label.logo{
+		font-size: 30px; padding-left: 50px;
+	}
+	nav ul li a{
+		font-size: 16px;
+	}
+	/*------------------------------*/
+	.button{width: 20%; height: 9.5%;margin-bottom: 2px;}
+	.display{width: 80%; margin-bottom: 3px;}
+	#uguale{width: 84%;}
+}
+	
+
+@media (max-width: 858px){
+	/*------------------------------*/
+	.checkbtn{display: block; background: #ffffff; height: 25px; border-radius: 25px;
+	margin-top: 25px; border: solid; border-color: #ffffff00;padding: 10px;}
+	ul{
+		position: fixed; width: 100%; height: 100vh;
+		background: #2c3e50; top: 80px; left: -100%; text-align: center;
+		transition: all .5s;
+	}
+	nav ul li{
+		display: block; margin: 50px 0; line-height: 30px;
+	}
+	nav ul li a{
+		font-size: 20px;
+	}
+	a:hover,a.active{
+		background: none; color: #0082e6;
+	}
+	#check:checked~ul{
+		left: 0px;
+	}
+	/*------------------------------*/
+	
+}
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0;
+}
+* html .clearfix             { zoom: 1; } /* IE6 */
+*:first-child+html .clearfix { zoom: 1; } /* IE7 */
