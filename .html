@@ -1,0 +1,72 @@
+<html>
+<head>
+<!-------------------Standard-------------------------->
+<link href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css" rel="stylesheet" type="text/css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="projectScarlett.css" rel="stylesheet" type="text/css">
+
+<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-with, initial-scale=1.0">
+</head>
+<body>
+<!---------------Menu---------------------------------->
+<nav>
+<input type="checkbox" id="check">
+<label for="check" class="checkbtn">
+<i class="fas fa-bars"></i>
+</label>
+<label class="logo">Lyn4</label>
+<ul>
+<li><a class="active" href="#">Home</a></li>
+<li><a href="#">About</a></li>
+<li><a href="#">Services</a></li>
+<li><a href="#">Contact</a></li>
+<li><a href="#">Feedback</a></li>
+</ul>
+</nav>
+<!----------------------------------------------------->
+<div id="title">PrOjEcT sCaRlEtT</div>
+
+
+ <div class="content">
+ <input type="text" name="display" id="operazioni" readonly="readonly" class="display">
+ </div>
+ <div class="content">
+ <div class="content">
+ <input type="submit"id="7"value="7" onclick="n(this.id)" class="button">
+ <input type="submit"id="8"value="8" onclick="n(this.id)" class="button">
+ <input type="submit"id="9"value="9" onclick="n(this.id)" class="button">
+ <input type="submit"id="/"value="/" onclick="n(this.id)" class="button">
+ </div>
+ <div class="content">
+ <input type="submit"id="4"value="4"onclick="n(this.id)" class="button">
+ <input type="submit"id="5"value="5"onclick="n(this.id)" class="button">
+ <input type="submit"id="6"value="6"onclick="n(this.id)" class="button">
+ <input type="submit"id="*"value="X"onclick="n(this.id)" class="button">
+ </div>
+ <div class="content">
+ <input type="submit"id="1"value="1"onclick="n(this.id)" class="button">
+ <input type="submit"id="2"value="2"onclick="n(this.id)" class="button">
+ <input type="submit"id="3"value="3"onclick="n(this.id)" class="button">
+ <input type="submit"id="-"value="-"onclick="n(this.id)" class="button">
+ </div>
+ <div class="content">
+ <input type="submit"value="C"onclick="cancella()" class="button">
+ <input type="submit"id="0"value="0"onclick="n(this.id)" class="button">
+ <input type="submit"id="."value="."onclick="n(this.id)" class="button">
+ <input type="submit"id="+"value="+"onclick="n(this.id)" class="button">
+ </div>
+ <div class="content">
+ <button value="="onclick="operazione()"class="button" id="uguale">=</button>
+ </div>
+ </div> 
+
+<div id="footer">
+@2022
+</div>
+
+
+</body>
+<script src="projectScarlett.js"></script>
+</html>
